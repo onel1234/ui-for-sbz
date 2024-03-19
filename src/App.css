@@ -1,38 +1,64 @@
-.App {
+.login-container {
+  max-width: 50px;
+  margin: 50px;
+}
+
+/* LoginForm */
+.login-form {
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 5px;
+}
+
+
+.login-form .form-group {
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  font-weight: bold;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 30%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.login-form button[type="submit"] {
+  width: 30%;
+  padding: 10px;
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  border-radius: 3px;
+}
+
+/* Hover effect for login button */
+.login-form button[type="submit"]:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+
+.login-form .form-check {
+  margin-bottom: 20px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   text-align: center;
+  padding: 10px 0;
+  background: #343a40;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo{
+  display: block; 
+  float: right; 
+  margin-right: 10px;
 }
